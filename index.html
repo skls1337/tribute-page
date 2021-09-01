@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
     <title>Kentaro Miura</title>
+   
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Kentaro Miura</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mangaka Activity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Infamous Masterpieces</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
 
 <body>
+    
+    <button onclick="topFunction()" id="myBtn">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </button>
+    
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html">Kentaro Miura</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link " href="#about">About</a></li>
+                    <li><a class="nav-link " href="#activity">Artist Activity</a></li>
+                    <li><a class="nav-link  " href="#masterpiece">Infamous Masterpieces</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
     <script src="js/bootstrap.js"></script>
     <section id="guts" class="d-flex align-items-center">
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
@@ -59,18 +60,120 @@
                             The legendary manga artist who was an inspiration to many
                         </p>
                         <p>
-                            Kentaro Miura was born on July 11th, 1966 in Chiba, Chiba Prefecture, Japan to two artists who were students at Musashino Arts School. His father created storyboards for commericals and his mother was an art teacher, which resulted in a naturally constructed artistic environment that inspired him to draw. Thus, in 1973, he began experimenting with drawing in a notebook.
+                            Kentaro Miura was born on July 11th, 1966 in Chiba, Chiba Prefecture, Japan to two artists
+                            who were students at Musashino Arts School. His father created storyboards for commericals
+                            and his mother was an art teacher, which resulted in a naturally constructed artistic
+                            environment that inspired him to draw. Thus, in 1973, he began experimenting with drawing in
+                            a notebook.
                         </p>
                         <p>
-                            From the very young age of 10 years old in 1976, he created his first manga for his schoolmates in a school publication, called Miuranger, which spanned 40 total volumes. However, this was never published in any official formats, so original artwork and storyline is unknown. In fact, one image is commonly mistakened to be from Miuranger, but is actually from his one-shot post-apocalyptic story, Noa.
+                            From the very young age of 10 years old in 1976, he created his first manga for his
+                            schoolmates in a school publication, called Miuranger, which spanned 40 total volumes.
+                            However, this was never published in any official formats, so original artwork and storyline
+                            is unknown. In fact, one image is commonly mistakened to be from Miuranger, but is actually
+                            from his one-shot post-apocalyptic story, Noa.
                         </p>
                         <p>
-                            The best manga ever, Berserk, first appeared in 1988. This version is what we now call Berserk: The Prototype - a 48 paged manga that won Miura a prize from a Manga School.
+                            The best manga ever, Berserk, first appeared in 1988. This version is what we now call
+                            Berserk: The Prototype - a 48 paged manga that won Miura a prize from a Manga School.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="middle" id="middle">
+            <div class="container" data-aos="zoom-in">
+                <div class="text-center">
+                    <p>Kentaro Miura: The creator of the infamous manga 'Berserk'</p>
+                    <p>Kentaro Miura's long-running manga Berserk is one of the most popular series of all time. The
+                        story's protagonist is Guts, a mercenary-turned-monster hunter whose furious temper and
+                        fighting abilities give the series its name. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activity" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                        <img src="./drawables/mangas.jpg" alt="km">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+                        <h3>
+                            Kentaro Miura's Manga's & Illustrations
+                        </h3>
+                        <p class="fst-italic">
+                            Works:
+                        </p>
+                        <ul style="list-style: none;">
+                            <li></li><i class="bi bi-check"></i> Futatabi (再び) (1985) — One-shot. Published in
+                            Kodansha's
+                            Weekly Shōnen Magazine.</li>
+                            <li><i class="bi bi-check"></i> NOA (1985) — One-shot. Published in Kodansha's Fresh
+                                Magazine..</li>
+                            <li><i class="bi bi-check"></i> Berserk: The Prototype (ベルセルク, Beruseruku) (1988) —
+                                One-shot. Published in Hakusensha's Monthly ComiComi.</li>
+                            <li><i class="bi bi-check"></i> King of Wolves (王狼, Ōrō) (1989) — Written by Buronson,
+                                illustrated by Miura. Serialized in Hakusensha's Monthly Animal House.</li>
+                            <li><i class="bi bi-check"></i> Berserk (ベルセルク, Beruseruku) (1989–2021) — Serialized in
+                                Hakusensha's Monthly Animal House (1989–1992) and Young Animal (1992–2021).</li>
+                            <li><i class="bi bi-check"></i> Ōrō Den (王狼伝) (1990) — Written by Buronson, illustrated by
+                                Miura. Serialized in Hakusensha's Monthly Animal House.</li>
+                            <li><i class="bi bi-check"></i> Japan (ジャパン) (1992) — Written by Buronson, illustrated by
+                                Miura. Serialized in Hakusensha's Young Animal.</li>
+                            <li><i class="bi bi-check"></i> Giganto Maxia (ギガントマキア, Gigantomakia) (2013–2014) —
+                                Serialized in Hakusensha's Young Animal.</li>
+                            <li><i class="bi bi-check"></i> Duranki (ドゥルアンキ) (2019–2021) — Serialized in Hakusensha's
+                                Young Animal Zero.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="masterpiece" id="masterpiece">
+            <div class="container">
+
+                <div class="section-title masterpiece">
+                    <span>Infamous Masterpieces</span>
+                    <h2>Infamous Masterpieces</h2>
+                    <p>Here are some of popular mangas created by Kentaro Miura</p>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="section-title">
+                            <h2>Gigantomackhia </h2>
+                            <p>A mini series that is 6 chapters long about a war between Zeus' army and the giant
+                                Alcyoneus' army - and set 100 million years in the future! How cool is that?</p>
+                        </div>
+                        <img src="./drawables/Gigatomackia.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="section-title">
+                            <h2>Berserk (November 26, 1990) </h2>
+                            <p>No lie, this is the best manga of all time (heavily biased). It's an extremely violent
+                                story set in a Europe-inspired dark fantasy world that follows both Guts, a dark
+                                swordsman , and Griffith, the leader of the "Band of the Hawk", a mercenary band through
+                                one of the most deliberate and thorugh story telling and character development stories
+                                of all time. Need I say more? Go read it right now! </p>
+                        </div>
+                        <img src="./drawables/Berserkimg.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="section-title">
+                            <h2>Noa </h2>
+                            <p>This manga is about survival in a post-apocalyptic era with more advanced technology
+                                following the characters Noah and Angel! Want more? Well no spoilers here... </p>
+                        </div>
+                        <img src="./drawables/noa.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+        </section>
+
 
         <footer id="footer">
             <div class="footer-top">
@@ -86,12 +189,34 @@
             </div>
             </div>
         </footer>
+
     </main>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+<script>
+   var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
 </body>
 
 </html>
