@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Kentaro Miura</title>
 </head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kentaro Miura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mangaka Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Infamous Masterpieces</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body>
-    <head>
+    <script src="js/bootstrap.js"></script>
+    <section id="guts" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+            <h1>Tribute to Kentaro Miura</h1>
+            <h2>A great artist that inspired the manga world</h2>
+        </div>
+    </section>
+    <main id="main">
 
-    </head>
-    <main>
-        
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                        <img src="./drawables/miura.jpeg" alt="km">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+                        <h3>
+                            About Kentaro Miura's Life
+                        </h3>
+                        <p class="fst-italic">
+                            The legendary manga artist who was an inspiration to many
+                        </p>
+                        <p>
+                            Kentaro Miura was born on July 11th, 1966 in Chiba, Chiba Prefecture, Japan to two artists who were students at Musashino Arts School. His father created storyboards for commericals and his mother was an art teacher, which resulted in a naturally constructed artistic environment that inspired him to draw. Thus, in 1973, he began experimenting with drawing in a notebook.
+                        </p>
+                        <p>
+                            From the very young age of 10 years old in 1976, he created his first manga for his schoolmates in a school publication, called Miuranger, which spanned 40 total volumes. However, this was never published in any official formats, so original artwork and storyline is unknown. In fact, one image is commonly mistakened to be from Miuranger, but is actually from his one-shot post-apocalyptic story, Noa.
+                        </p>
+                        <p>
+                            The best manga ever, Berserk, first appeared in 1988. This version is what we now call Berserk: The Prototype - a 48 paged manga that won Miura a prize from a Manga School.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mx-auto">
+                        <div class="footer-info">
+                            <h3>Kentaro Miura</h3>
+                            <p>1966-2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </footer>
     </main>
-    <footer>
 
-    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
